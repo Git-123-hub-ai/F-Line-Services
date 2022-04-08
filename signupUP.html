@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1.0, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'signup.css'%}">
+</head>
+
+<body>
+
+    <div class="signup_as">
+        <div class="opt"><label for="HOTEL">HOTEL</label><input type="radio" name="options"></div>
+        <div class="opt"><label for="NGO">NGO</label><input type="radio" name="options"></div>
+        <div class="opt"><label for="User">PEOPLE</label><input type="radio" name="options"></div>
+    </div>
+    <form class="F1" action="post">
+        <H1>REQUEST FORM FOR NGO ZONE NEW BRANCH OPENING</H1>
+        <div class="NGO_ZONE">
+            <label> NGO ZONE </label>
+            <select>
+                <option selected value="1"> ZONE-1 </option>
+                <option value="2"> ZONE-2 </option>
+                <option value="3"> ZONE-3 </option>
+                <option value="4"> ZONE-4 </option>
+                <option value="5"> ZONE-5 </option>
+            </select><br>
+        </div>
+        <div class="NGO_AREA">
+            <label>Select Area </label>
+            <select>
+                <option selected value="E"> EAST </option>
+                <option value="W"> WEST </option>
+                <option value="N"> NORTH </option>
+                <option value="S"> SOUTH </option>
+            </select><br>
+
+        </div>
+        <div class="NGO_CAPACITY">
+            <label>ESTIMATED CAPACITY</label>
+            <select>
+                <option selected value="E">MINI 10-25 </option>
+                <option value="W"> REGULAR 25-60</option>
+                <option value="N"> CAMP 60+</option>
+            </select><br>
+
+        </div>
+        <div class="requester_contact">
+            <label>REQUESTERS NAME : </label>
+            <input type="text" id="requester_name" name="req_name"><br>
+            <label>REQUESTERS CONTACT DETAILS :</label>
+            <input type="phone" id="requester_phone" name="req_phone"><br>
+        </div>
+        <div class="uploadimage">
+        <input type="file" name="uploadtheimage" id="uploadtheimage">
+        </div>
+        <div class="request">
+            <Button type="submit">request</Button>
+        </div>
+    </form>
+
+    <form class="F2">
+        <H1>F-Line Subscription Request Form For Hotels</H1>
+        <div>
+        <label for="NAME_HOTEL"> HOTEL NAME: </label>
+        <input type="text" id="NAME_HOTEL" name="HOTEL"><br>
+        </div>
+        <div class="HOTEL_ABILITY">
+            <label>CAN PROVIDE FOOD FOR
+                <select>
+                    <option selected value="E">5-10 </option>
+                    <option value="W"> 10-15</option>
+                    <option value="N"> 15-20</option>
+                    <option value="">20+</option>
+                </select> PEOPLE
+            </label>
+        </div>
+        <div class="HOTEL_ZONE">
+            <label> SELECT YOUR ZONE </label>
+            <select>
+                <option selected value="1"> ZONE-1 </option>
+                <option value="2"> ZONE-2 </option>
+                <option value="3"> ZONE-3 </option>
+                <option value="4"> ZONE-4 </option>
+                <option value="5"> ZONE-5 </option>
+            </select><br>
+        </div>
+        <div class="hotelcontact">
+            <label>Phone number: +91 </label>
+            <input type="phone" maxlength="8">
+            <label>E-mail id:</label>
+            <input type="text">
+        </div>
+        <div>
+        <label>Upload the Official existance DOCUMENT here</label>
+        <input type="file" name="UploadedImage" id="UploadedImage">
+        </div>
+        <div class="register">
+            <Button type="button">register</Button>
+        </div> <br>
+    </form>
+
+    <form class="F3">
+        <h1>F-Line Volunteer & User Registration Form </h1>
+
+        <div><label for="NAME_PEOPLE"> FULL NAME: </label>
+            <input type="text" id="NAME_PEOPLE" name="name_people"><br>
+        </div>
+        <div><label> AGE: </label>
+            <input type="Number" id="age" name="age"><br>
+        </div>
+        <div><label> Select Your Speciality : </label>
+            <select>
+                <option selected value="CA"> CAMP ARRANGEMENT VOLUNTEER</option>
+                <option value="FD"> FOOD DISTRIBUTION VOLUNTEER </option>
+                <option value="TM"> TECH MANAGEMENT VOLUNTEER </option>
+                <option value="RV"> REGULAR VOLUNTEER </option>
+            </select><br>
+        </div>
+        </div>
+        <div class="hotelcontact">
+            <label>Phone number: +91 </label>
+            <input type="phone" maxlength="8">
+            <label>E-mail id:</label>
+            <input type="text">
+        </div>
+        <div>
+            <label>Upload the Aadhar Image here</label>
+            <input type="file" name="UploadedImage" id="UploadedImage">
+        </div>
+        <div class="register">
+            <button type="button">register</button>
+        </div> <br>
+    </form>
+</body>
+
+</html>

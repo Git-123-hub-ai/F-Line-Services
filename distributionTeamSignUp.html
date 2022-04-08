@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>🍞 F-Line Services</title>
+        <!-- Favicon -->
+        <link rel="icon" href="Favicon/favicon.ico">
+        
+        <!-- Bootstrap CSS and JS  -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>      
+        
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&family=Open+Sans&family=Pacifico&family=Roboto&family=Ubuntu&display=swap" rel="stylesheet">
+        
+        <!-- CSS-->
+        <link rel="stylesheet" href="CSS/styles.css">
+</head>
+
+<body>
+    <!-- Header Bar -->    
+    <!--Nav Bar start-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navBar">
+        <div class="container-fluid">
+                <a class="navbar-brand" href="#">F-Line Services</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="aboutUs.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact Us</a>
+                        <!-- Modal -->
+                            <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <div class="container center">
+                                            <h5 class="modal-title" id="exampleModalLabel">Contact Form</h5>
+                                        </div>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container ">
+                                            <div class="form-floating mb-3">
+                                                <input type="name" class="form-control" id="floatingInput" placeholder="Enter Your Name">
+                                                <label for="floatingInput">Name</label>
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                                <label for="floatingInput">Email address</label>
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <input type="number" class="form-control" id="floatingInput" placeholder="Enter your Contact number">
+                                                <label for="floatingInput">Contact Number</label>
+                                            </div>
+                                            <p>Select the option your question is related to</p>
+                                            <div class="form-floating my-2">
+                                                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                                    <option selected>Click Here to Open menu</option>
+                                                    <option value="1">NGO</option>
+                                                    <option value="2">Hotels/Restaurants</option>
+                                                    <option value="3">Distribution teams</option>
+                                                </select>
+                                                <label for="floatingSelect">Choose your Option</label>
+                                            </div>
+                                            <p>Elaborate your query</p>
+                                            <div class="form-floating">
+                                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 90px;width:450px;" aria-placeholder=""></textarea>
+                                                <label for="floatingTextarea2">Click Here to start typing!</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Submit</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        <!-- Modal -->
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Subscription Type-i</a></li>
+                        <li><a class="dropdown-item" href="#">Subscription Type-ii</a></li>
+                        <li><a class="dropdown-item" href="#">Subscription Type-iii</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Support</a></li>
+                        <li><a class="dropdown-item" href="#">Review Us!!</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="btn btn-secondary navbar-dark bg-dark nav-link active" data-bs-toggle="modal" data-bs-target="#loginModal"> Log In </a>
+                            
+                            <!-- Modal -->
+                                <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header ">
+                                            <div class="container center">
+                                                <h5 class="modal-title" id="loginModalLabel">Login to F-Line Services</h5>
+                                            </div>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container">
+                                                <form>
+                                                    <div class="form-floating mb-3 my-2">
+                                                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                                        <label for="floatingInput">Email address</label>
+                                                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                                    </div>
+                                                    <div class="form-floating my-2">
+                                                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                                        <label for="floatingPassword">Password</label>
+                                                    </div>
+                                                    <div class="mb-3 form-check">
+                                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                        <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary">Login</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="container">
+                                                <p class="text-center">Don't have an account ? Click here for a free <a href="signUp.html"> Sign Up</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>    
+                        </li>
+                        &nbsp;&nbsp;
+                        <li class="nav-item">
+                            <a class="btn btn-secondary navbar-dark bg-dark nav-link active" href="signUp.html"> Sign Up </a> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--Nav Bar end-->
+<!-- Header end -->
+
+<!-- Middle Section Start-->
+<div class="container">
+    <div class="container center">
+        <h3>Sign Up and Register as a Volunteer </h3>
+    </div>
+    <div class="container d-flex justify-content-center align-items-center">
+        <form class="F3 innerFormPadding">
+            <div class="input-group">
+                <span class="input-group-text">Enter your name</span>
+                <input type="text" aria-label="name" class="form-control" id="requester_name" name="req_name">
+            </div>
+            <br>
+
+            <div class="volunteercontact">
+                <div class="input-group">
+                    <span class="input-group-text">Email Address</span>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <br>
+                <div class="input-group">
+                    <span class="input-group-text">Password</span>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your password">
+                </div>
+                <div id="passwordHelpBlock" class="form-text">
+                    Your password must be 8-20 characters long, containing letters numbers and special characters ,and must not contain spaces or emoji.
+                </div>
+                <br>
+                <div class="input-group">
+                    <span class="input-group-text">Phone number: +91</span>
+                    <input type="phone" class="form-control" id="exampleFormControlInput1" placeholder="" maxlength="10">
+                </div>
+            </div>
+            <br>
+
+            <div class="input-group">
+                <span class="input-group-text">Age</span>
+                <input type="text" class="form-control" id="age" name="age" placeholder="" maxlength="3">
+            </div>
+            <br>
+            
+            <div  class="input-group">
+                <span class="input-group-text">Select your Speciality</span>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected value="CA"> CAMP ARRANGEMENT VOLUNTEER</option>
+                    <option value="FD"> FOOD DISTRIBUTION VOLUNTEER </option>
+                    <option value="TM"> TECH MANAGEMENT VOLUNTEER </option>
+                    <option value="RV"> REGULAR VOLUNTEER </option>
+                </select>
+            </div>
+            <br>
+
+            <div class="input-group">
+                <span class="input-group-text">Upload Image</span>
+                <input type="file" class="form-control" id="UploadedImage" name="UploadedImage">
+                <label class="input-group-text" for="inputGroupFile02">Upload</label>
+            </div>
+            <br>
+
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label text-muted" for="exampleCheck1">By Clicking here you agree to our Terms and conditions.</label>
+            </div>
+
+            <div class="container center">
+                <div class="register">
+                    <button class="btn btn-primary" type="button">Sign up</button>
+                </div> 
+            </div>
+
+        </form>
+    </div>
+</div>
+<!-- Middle Section End-->
+
+<!-- Footer Start -->
+<div class="container">
+    <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#navBar" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+        <li class="nav-item"><a href="aboutUs.html" class="nav-link px-2 text-muted">About</a></li>
+    </ul>
+    <p class="text-center text-muted">© 2022 F-Line Services Company, Inc</p>
+    <div class="center">
+        <a href="index.html#navBar" class="text-center text-muted">Back to top</a>
+    </div>
+    </footer>
+</div>
+<!-- Footer end -->
+
+
+<!-- JS -->
+<script src="JS/script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+

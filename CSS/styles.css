@@ -1,0 +1,102 @@
+/*
+font-family: 'Bebas Neue', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans' , sans-serif;
+font-family: 'Pacifico'  , cursive;
+font-family: 'Roboto'    , sans-serif;
+font-family: 'Ubuntu'    , sans-serif;
+*/
+
+
+/* ID Selectors*/
+#registrationPage{
+    background-color: aquamarine;
+    height: 549px;
+}
+
+#passwordHelpBlock{
+    width: 100%;
+}
+
+/* Class Selectors */
+
+.center{
+    text-align: center;
+}
+
+.foodWasteImg{
+    margin: 20px;
+    height: 400px;
+    width : 400px;
+}
+
+.form-control{
+    width: 50%;
+}
+
+
+.extraTopMargin{
+    margin-top: 30px;
+}
+
+.checkBoxMarginTop{
+    text-align: center;
+    margin-top: 7px;
+}
+
+
+.h1ForIndex{
+    font-family: 'Ubuntu'    , sans-serif;
+    font-weight: bold;
+    font-size: 90px;
+    line-height:1.5;
+    /* line-height: 1.4; */
+}
+
+.loginUserImgMargin{
+    margin-top: 50px;
+}
+
+.loginContainer{
+    width: 50%;
+    text-align: left;
+}
+
+.F1{
+    width: 50%;
+    border:solid black 2px;
+    border-radius: 15px;
+}
+
+.F2{
+    width: 50%;
+    border:solid black 2px;
+    border-radius: 15px;
+}
+
+.F3{
+    width: 50%;
+    border:solid black 2px;
+    border-radius: 15px;
+}
+
+
+.innerFormPadding{
+    padding: 8px;
+}
+
+/* Html Selectors */
+
+h1{
+    font-family: 'Ubuntu'    , sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    line-height:1.5;
+    /* line-height: 1.4; */
+}
+
+h3{
+    font-family: 'Ubuntu'    , sans-serif;
+    font-weight: bold;
+}
+
