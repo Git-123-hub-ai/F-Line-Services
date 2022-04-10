@@ -51,39 +51,45 @@
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        <div class="container ">
-                                            <div class="form-floating mb-3">
-                                                <input type="name" class="form-control" id="floatingInput" placeholder="Enter Your Name">
-                                                <label for="floatingInput">Name</label>
+                                        <form  id="contactForm">
+                                            <div class="container">
+                                                <div class="form-floating mb-3">
+                                                    <input type="name" class="form-control" id="name" placeholder="Enter Your Name">
+                                                    <label for="floatingInput">Name</label>
+                                                </div>
+                                                <div class="form-floating mb-3">
+                                                    <input type="email" class="form-control" id="emailId" placeholder="name@example.com">
+                                                    <label for="floatingInput">Email address</label>
+                                                </div>
+                                                <div class="form-floating mb-3">
+                                                    <input type="number" class="form-control" id="contactNumber" placeholder="Enter your Contact number">
+                                                    <label for="floatingInput">Contact Number</label>
+                                                </div>
+                                                <p>Select the option your question is related to</p>
+                                                <div class="form-floating my-2">
+                                                    <select class="form-select" id="queryOptions" aria-label="Floating label select example">
+                                                        <option selected>Click Here to Open menu</option>
+                                                        <option value="NGO">NGO</option>
+                                                        <option value="Hotel/Restaurants">Hotels/Restaurants</option>
+                                                        <option value="Distribution Teams">Distribution teams</option>
+                                                    </select>
+                                                    <label for="floatingSelect">Choose your Option</label>
+                                                </div>
+                                                <p>Elaborate your query</p>
+                                                <div class="form-floating">
+                                                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 90px;width:450px;" aria-placeholder=""></textarea>
+                                                    <label for="floatingTextarea2">Click Here to start typing!</label>
+                                                </div>
+                                                <div class="container d-flex justify-content-center align-items-center my-2">
+                                                    <button class="btn btn-primary" id="contactFormButton" type="submit">Submit</button>
+                                                </div>
                                             </div>
-                                            <div class="form-floating mb-3">
-                                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                                <label for="floatingInput">Email address</label>
-                                            </div>
-                                            <div class="form-floating mb-3">
-                                                <input type="number" class="form-control" id="floatingInput" placeholder="Enter your Contact number">
-                                                <label for="floatingInput">Contact Number</label>
-                                            </div>
-                                            <p>Select the option your question is related to</p>
-                                            <div class="form-floating my-2">
-                                                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                                                    <option selected>Click Here to Open menu</option>
-                                                    <option value="1">NGO</option>
-                                                    <option value="2">Hotels/Restaurants</option>
-                                                    <option value="3">Distribution teams</option>
-                                                </select>
-                                                <label for="floatingSelect">Choose your Option</label>
-                                            </div>
-                                            <p>Elaborate your query</p>
-                                            <div class="form-floating">
-                                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 90px;width:450px;" aria-placeholder=""></textarea>
-                                                <label for="floatingTextarea2">Click Here to start typing!</label>
-                                            </div>
-                                        </div>
+                                        </form>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Submit</button>
+                                        <div class="container center d-flex justify-content-center align-items-center">
+                                            <p class="text-center">Don't have an account ? Click here for a free <a href="signUp.html"> Sign Up</a></p>
+                                        </div>
                                     </div>
                                 </div>
                                 </div>
@@ -294,7 +300,9 @@
     
 
 <!-- JS -->
-    <script src="JS/script.js"></script>
+    <script src="JS/contactSubmit.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
     
 </body>
 </html>
