@@ -51,23 +51,26 @@
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        <form  id="contactForm">
+                                        <form method="POST" action="https://formsubmit.co/kramanshikasiddharth@gmail.com" id="contactForm" >
                                             <div class="container">
+                                                <div class="form-floating">
+                                                    <input type="hidden" name="_subject" value="New Form Inquiry!">
+                                                </div>
                                                 <div class="form-floating mb-3">
-                                                    <input type="name" class="form-control" id="name" placeholder="Enter Your Name">
+                                                    <input type="name" class="form-control" id="name" placeholder="Enter Your Name" name="Name">
                                                     <label for="floatingInput">Name</label>
                                                 </div>
                                                 <div class="form-floating mb-3">
-                                                    <input type="email" class="form-control" id="emailId" placeholder="name@example.com">
+                                                    <input type="email" class="form-control" id="emailId" placeholder="name@example.com" name="Email">
                                                     <label for="floatingInput">Email address</label>
                                                 </div>
                                                 <div class="form-floating mb-3">
-                                                    <input type="number" class="form-control" id="contactNumber" placeholder="Enter your Contact number">
+                                                    <input type="number" class="form-control" id="contactNumber" placeholder="Enter your Contact number" name="Contact Number">
                                                     <label for="floatingInput">Contact Number</label>
                                                 </div>
                                                 <p>Select the option your question is related to</p>
                                                 <div class="form-floating my-2">
-                                                    <select class="form-select" id="queryOptions" aria-label="Floating label select example">
+                                                    <select class="form-select" id="queryOptions" aria-label="Floating label select example" name="queryOption">
                                                         <option selected>Click Here to Open menu</option>
                                                         <option value="NGO">NGO</option>
                                                         <option value="Hotel/Restaurants">Hotels/Restaurants</option>
@@ -77,7 +80,7 @@
                                                 </div>
                                                 <p>Elaborate your query</p>
                                                 <div class="form-floating">
-                                                    <textarea class="form-control" placeholder="Leave a comment here" id="elaboratedQuery" style="height: 90px;width:450px;" aria-placeholder=""></textarea>
+                                                    <textarea class="form-control" placeholder="Leave a comment here" id="elaboratedQuery" style="height: 90px;width:450px;" aria-placeholder="" name="Elaborated Query"></textarea>
                                                     <label for="floatingTextarea2">Click Here to start typing!</label>
                                                 </div>
                                                 <div class="container d-flex justify-content-center align-items-center my-2">
