@@ -95,6 +95,9 @@ font-family: 'Ubuntu'    , sans-serif;
     border-radius: 0;
     border: 0;
 }
+.underline{
+    text-decoration: underline;
+}
 
 
 /* Html Selectors */

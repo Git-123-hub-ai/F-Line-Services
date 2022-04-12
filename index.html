@@ -32,14 +32,14 @@
                 </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item expandCard">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    <li class="nav-item ">
+                        <a class="nav-link active " id="home" aria-current="page" href="index.html">Home</a>
                     </li>
-                    <li class="nav-item expandCard">
-                        <a class="nav-link active" href="aboutUs.html">About Us</a>
+                    <li class="nav-item ">
+                        <a class="nav-link active " id="aboutUs" href="aboutUs.html">About Us</a>
                     </li>
-                    <li class="nav-item expandCard">
-                        <a class="nav-link active" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact Us</a>
+                    <li class="nav-item ">
+                        <a class="nav-link active" id="contactUs" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact Us</a>
                         <!-- Modal -->
                             <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-scrollable">
@@ -99,8 +99,8 @@
                             </div>
                         <!-- Modal -->
                     </li>
-                    <li class="nav-item dropdown expandCard">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <li class="nav-item dropdown expandCard" >
+                        <a class="nav-link dropdown-toggle" id="services" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Services
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -116,8 +116,8 @@
                 
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                        <li class="nav-item expandCard">
-                            <a class="btn btn-secondary navbar-dark bg-dark nav-link active" data-bs-toggle="modal" data-bs-target="#loginModal"> Log In </a>
+                        <li class="nav-item expandCard"> 
+                            <a class="btn btn-secondary navbar-dark bg-dark nav-link active" id="logInButton" data-bs-toggle="modal" data-bs-target="#loginModal"> Log In </a>
                             
                             <!-- Modal -->
                                 <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
@@ -160,7 +160,7 @@
                         </li>
                         &nbsp;&nbsp;
                         <li class="nav-item expandCard">
-                            <a class="btn btn-secondary navbar-dark bg-dark nav-link active" href="signUp.html"> Sign Up </a> 
+                            <a class="btn btn-secondary navbar-dark bg-dark nav-link active" id="signUpButton" href="signUp.html"> Sign Up </a> 
                         </li>
                     </ul>
                 </div>
@@ -302,7 +302,7 @@
     
 
 <!-- JS -->
-    
+    <script src="JS/expandCards.js"></script>
 
     
 </body>
