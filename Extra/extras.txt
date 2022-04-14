@@ -213,3 +213,11 @@
             </div>
         </div>    
     </section>
+
+
+    Form Validation
+
+    1. submission
+    2. data sending 
+    3. loading
+    4. alert msg / pop msg  ---> jquery
