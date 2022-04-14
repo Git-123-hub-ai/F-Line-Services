@@ -127,6 +127,10 @@ font-family: 'Ubuntu'    , sans-serif;
     transform: scaleX(1);
 }
 
+.hide{
+    display: none;
+}
+
 /* Html Selectors */
 
 h1{
