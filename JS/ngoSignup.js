@@ -52,11 +52,13 @@ const uploadErrorMsg = `
 
 
 function clearErrors(){
-    errors = document.getElementsByClassName("formError");
+    let errors = document.getElementsByClassName("formError");
     for (let item of errors){
         item.innerHTML = "";
     }
 }
+
+
 
 function setError(id,error){
     //sets error inside tag of id
@@ -80,15 +82,18 @@ ngoFormButtonClick.addEventListener('click',function validateForm (event) {
     clearErrors();
 
 
+
     //perform validation and if validation fails , set the value of defaultReturnValue to false.
     // name validation
-    var name = document.forms["myForm"]["req_name"].value;
+    var name = document.forms["myForm"]["requester_name"].value;
     if((name.length<=4)||(name.length>30)){
         
         setError("nameErrorMsg",nameErrorMsg);
+        document.getElementById("requester_name").classList.add("invalidInput")
     }
     else{
         setValid("nameValidMsg",validMsg)
+        document.getElementById("requester_name").classList.add("validInput")
     }
 
     //contact number validation
@@ -115,7 +120,6 @@ ngoFormButtonClick.addEventListener('click',function validateForm (event) {
     var password = document.forms["myForm"]["signUpPassword"].value;
     const passwordFormat =/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-_]).{8,30}$/;
     const passwordValid = passwordFormat.test(password)
-    console.log(passwordValid)
     if(passwordValid == false){
         setError("passwordErrorMsg",passwordErrorMsg)
     }

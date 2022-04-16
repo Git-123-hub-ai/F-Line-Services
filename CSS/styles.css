@@ -143,6 +143,13 @@ font-family: 'Ubuntu'    , sans-serif;
     color: darkgreen;
 }
 
+.invalidInput{
+    border-color: red;
+}
+
+.validInput{
+    border-color: darkgreen;
+}
 /* Html Selectors */
 
 h1{
