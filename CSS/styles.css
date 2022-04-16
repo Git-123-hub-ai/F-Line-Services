@@ -131,6 +131,18 @@ font-family: 'Ubuntu'    , sans-serif;
     display: none;
 }
 
+.errorMsg{
+    color: red;
+}
+
+.formNote{
+    color:mediumslateblue;
+}
+
+.validMsg{
+    color: darkgreen;
+}
+
 /* Html Selectors */
 
 h1{
