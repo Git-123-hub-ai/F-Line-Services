@@ -188,37 +188,60 @@
         <h3>Sign Up and Register as a Volunteer </h3>
     </div>
     <div class="container d-flex justify-content-center align-items-center">
-        <form class="F3 innerFormPadding" id="distributionTeamForm">
+        <form class="F3 innerFormPadding" id="distributionTeamForm" name="myForm">
             <div class="input-group">
                 <span class="input-group-text">Enter your name</span>
                 <input type="text" aria-label="name" class="form-control" id="requester_name" name="req_name">
+                <span class="input-group-text" id="nameIcon"></span>
+            </div>
+            <div id="nameMsg" class="form-text formError d-flex justify-content-center align-items-center">
+                
             </div>
             <br>
 
             <div class="volunteercontact">
                 <div class="input-group">
                     <span class="input-group-text">Email Address</span>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    <input type="email" class="form-control" id="signUpEmail" placeholder="name@example.com" name="email">
+                    <span class="input-group-text" id="emailIcon"></span>
+                </div>
+                <div id="emailMsg" class="form-text  formError d-flex justify-content-center align-items-center">
+                        
                 </div>
                 <br>
                 <div class="input-group">
                     <span class="input-group-text">Password</span>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your password">
+                    <input type="password" class="form-control" id="signUpPassword" placeholder="Enter your password" name="password">
+                    <span class="input-group-text" id="passwordIcon"></span>
                 </div>
-                <div id="passwordHelpBlock" class="form-text">
-                    Your password must be 8-20 characters long, containing letters numbers and special characters ,and must not contain spaces or emoji.
+                <div id="passwordHelpBlock" class="form-text formNote">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-return-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.5 1.5A.5.5 0 0 0 1 2v4.8a2.5 2.5 0 0 0 2.5 2.5h9.793l-3.347 3.346a.5.5 0 0 0 .708.708l4.2-4.2a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 8.3H3.5A1.5 1.5 0 0 1 2 6.8V2a.5.5 0 0 0-.5-.5z"/>
+                    </svg>&nbsp;&nbsp;
+                    Your password must be 8-30 characters long, containing (lowercase,uppercase,number,special character and must not contain spaces or emoji.)
+                </div>
+                <div id="passwordMsg" class="form-text formError d-flex justify-content-center align-items-center">
+                        
                 </div>
                 <br>
                 <div class="input-group">
                     <span class="input-group-text">Phone number: +91</span>
-                    <input type="phone" class="form-control" id="exampleFormControlInput1" placeholder="" maxlength="10">
+                    <input type="number" class="form-control" id="requester_phone" name="req_phone" placeholder="" maxlength="10">
+                    <span class="input-group-text" id="contactIcon"></span>
+                </div>
+                <div id="contactNumberMsg" class="form-text  formError d-flex justify-content-center align-items-center">
+                        
                 </div>
             </div>
             <br>
 
             <div class="input-group">
                 <span class="input-group-text">Age</span>
-                <input type="text" class="form-control" id="age" name="age" placeholder="" maxlength="3">
+                <input type="number" class="form-control" id="age" name="age" placeholder="" maxlength="2">
+                <span class="input-group-text" id="ageIcon"></span>
+            </div>
+            <div id="ageMsg" class="form-text formError d-flex justify-content-center align-items-center">
+                
             </div>
             <br>
             
@@ -237,6 +260,10 @@
                 <span class="input-group-text">Upload Image</span>
                 <input type="file" class="form-control" id="UploadedImage" name="UploadedImage">
                 <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                <span class="input-group-text" id="uploadIcon"></span>
+            </div>
+            <div id="uploadMsg" class="form-text formError d-flex justify-content-center align-items-center">
+                
             </div>
             <br>
 
