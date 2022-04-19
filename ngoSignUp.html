@@ -17,6 +17,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&family=Open+Sans&family=Pacifico&family=Roboto&family=Ubuntu&display=swap" rel="stylesheet">
         
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/38d171fc70.js" crossorigin="anonymous"></script>
+
         <!-- CSS-->
         <link rel="stylesheet" href="CSS/styles.css">
     </head>
@@ -192,42 +195,37 @@
                 <div class="requester_contact">
                     <div class="input-group">
                         <span class="input-group-text">Enter your name</span>
-                        <input type="text" aria-label="name" class="form-control" id="requester_name" name="req_name">
+                        <input type="text" aria-label="name" class="form-control" id="requester_name" name="req_name"/>
+                        <span class="input-group-text" id="nameIcon"></span>
                     </div>
-                    <div id="nameErrorMsg" class="form-text errorMsg formError d-flex justify-content-center align-items-center">
-                        
-                    </div>
-                    <div id="nameValidMsg" class="form-text validMsg formError d-flex justify-content-center align-items-center">
+                    <div id="nameMsg" class="form-text errorMsg formError d-flex justify-content-center align-items-center">
                         
                     </div>
                     <br>
                     <div class="input-group">
                         <span class="input-group-text">Contact Number</span>
                         <input type="number" aria-label="name" class="form-control" id="requester_phone" name="req_phone" maxlength="10">
+                        <span class="input-group-text" id="contactIcon"></span>
                     </div>
-                    <div id="contactNumberErrorMsg" class="form-text errorMsg formError d-flex justify-content-center align-items-center">
-                        
-                    </div>
-                    <div id="contactNumberValidMsg" class="form-text validMsg formError d-flex justify-content-center align-items-center">
+                    <div id="contactNumberMsg" class="form-text  formError d-flex justify-content-center align-items-center">
                         
                     </div>
                 </div>
                 <br>
                 <div class="input-group">
                     <span class="input-group-text">Email Address</span>
-                    <input type="email" class="form-control" id="signUpEmail" placeholder="name@example.com">
+                    <input type="email" class="form-control" id="signUpEmail" name="email" placeholder="name@example.com">
+                    <span class="input-group-text" id="emailIcon"></span>
                 </div>
-                <div id="emailErrorMsg" class="form-text errorMsg formError d-flex justify-content-center align-items-center">
+                <div id="emailMsg" class="form-text  formError d-flex justify-content-center align-items-center">
                         
-                </div>
-                <div id="emailValidMsg" class="form-text validMsg formError d-flex justify-content-center align-items-center">
-                    
                 </div>
                 <br>
                 
                 <div class="input-group">
                     <span class="input-group-text">Password</span>
-                    <input type="email" class="form-control" id="signUpPassword" placeholder="Enter your password">
+                    <input type="password" class="form-control" id="signUpPassword" placeholder="Enter your password" name="password">
+                    <span class="input-group-text" id="passwordIcon"></span>
                 </div>
                 <div id="" class="form-text formNote" >
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-return-right" viewBox="0 0 16 16">
@@ -235,11 +233,8 @@
                     </svg>&nbsp;&nbsp;
                     Your password must be 8-30 characters long, containing (lowercase,uppercase,number,special character and must not contain spaces or emoji.)
                 </div>
-                <div id="passwordErrorMsg" class="form-text errorMsg formError d-flex justify-content-center align-items-center">
+                <div id="passwordMsg" class="form-text formError d-flex justify-content-center align-items-center">
                         
-                </div>
-                <div id="passwordValidMsg" class="form-text validMsg formError d-flex justify-content-center align-items-center">
-                    
                 </div>
                 <br>
                 
@@ -287,11 +282,9 @@
                         <span class="input-group-text">Upload Image</span>
                         <input type="file" class="form-control" id="uploadtheimage" name="uploadtheimage">
                         <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                        <span class="input-group-text" id="uploadIcon"></span>
                     </div>
-                    <div id="uploadErrorMsg" class="form-text errorMsg formError d-flex justify-content-center align-items-center">
-                        
-                    </div>
-                    <div id="uploadValidMsg" class="form-text validMsg formError d-flex justify-content-center align-items-center">
+                    <div id="uploadMsg" class="form-text formError d-flex justify-content-center align-items-center">
                         
                     </div>
                 </div>

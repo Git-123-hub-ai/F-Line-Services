@@ -7,47 +7,34 @@
     
 // })
 
-
-const nameErrorMsg = `
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 16 16">
-<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-<path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
-</svg>&nbsp;&nbsp;Name should contain min. 5 characters and max. 30 characters.
-`;
-
-const validMsg = `                        
+const validIcon = `
 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
-<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
-</svg>&nbsp;&nbsp;Looks Good!
+    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+</svg>
 `;
 
-const contactNumberErrorMsg=`
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 16 16">
-<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-<path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
-</svg>&nbsp;&nbsp;Contact Number should contain 10 digits.
+const invalidIcon = `
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16">
+    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+</svg>`;
+
+const nameErrorMsg = `Name should contain min. 5 characters and max. 30 characters.
+`;
+
+const validMsg = `Looks Good!
+`;
+
+const contactNumberErrorMsg=`Contact Number should contain 10 digits.
 `;
 
 
-const emailErrorMsg=`
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 16 16">
-<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-<path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
-</svg>&nbsp;&nbsp;Please Enter a valid Email Address.
+const emailErrorMsg=`Please Enter a valid Email Address.
 `;
 
-const passwordErrorMsg = `
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 16 16">
-<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-<path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
-</svg>&nbsp;&nbsp;Please Enter a valid Password.
+const passwordErrorMsg = `Please Enter a valid Password.
 `;
 
-const uploadErrorMsg = `
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 16 16">
-<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-<path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
-</svg>&nbsp;&nbsp;Please Upload a .png File.
+const uploadErrorMsg = `Please Upload a .png File.
 `;
 
 
@@ -80,63 +67,143 @@ const ngoFormButtonClick = document.getElementById("ngoFormButton")
 ngoFormButtonClick.addEventListener('click',function validateForm (event) {
     event.preventDefault();
     clearErrors();
-
-
-
     //perform validation and if validation fails , set the value of defaultReturnValue to false.
-    // name validation
-    var name = document.forms["myForm"]["requester_name"].value;
-    if((name.length<=4)||(name.length>30)){
-        
-        setError("nameErrorMsg",nameErrorMsg);
-        document.getElementById("requester_name").classList.add("invalidInput")
-    }
-    else{
-        setValid("nameValidMsg",validMsg)
-        document.getElementById("requester_name").classList.add("validInput")
-    }
-
-    //contact number validation
-    var contactNumber = document.forms["myForm"]["requester_phone"].value;
-    if(contactNumber.length!=10){
-        setError("contactNumberErrorMsg",contactNumberErrorMsg)
-    }
-    else{
-        setValid("contactNumberValidMsg",validMsg)
-    }
-
-    //email address validation
-    var email = document.forms["myForm"]["signUpEmail"].value;
-    const emailFormat =/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
-    const emailValid = emailFormat.test(email)
-    if(emailValid == false){
-        setError("emailErrorMsg",emailErrorMsg)
-    }
-    else{
-        setValid("emailValidMsg",validMsg)
-    }
-
-    //password validation 
-    var password = document.forms["myForm"]["signUpPassword"].value;
-    const passwordFormat =/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-_]).{8,30}$/;
-    const passwordValid = passwordFormat.test(password)
-    if(passwordValid == false){
-        setError("passwordErrorMsg",passwordErrorMsg)
-    }
-    else{
-        setValid("passwordValidMsg",validMsg)
-    }
-
-    //upload validation
-    var upload = document.forms["myForm"]["uploadtheimage"].value;
-    var uploadFormat =/\.(png)$/;
-    uploadValid = uploadFormat.test(upload);
-    if(uploadValid == false){
-        setError("uploadErrorMsg",uploadErrorMsg)
-    }
-    else{
-        setValid("uploadValidMsg",validMsg)
-    }
-
-
 })
+
+// name validation
+const username = document.forms["myForm"]["requester_name"];
+username.addEventListener('input',function (e) {
+    console.log(e.target.name)
+    let target = e.target.name;
+    if (target == "req_name"){
+        var name = document.forms["myForm"]["requester_name"].value;
+    if((name.length<=4)||(name.length>30)){
+        setError("nameMsg",nameErrorMsg);
+        setError("nameIcon",invalidIcon)
+        document.getElementById("nameIcon").classList.add("invalidIcon")
+        document.getElementById("nameIcon").classList.remove("validIcon")
+        document.getElementById("nameMsg").classList.add("errorMsg")
+        document.getElementById("nameMsg").classList.remove("validMsg")
+    }
+    else{
+        setValid("nameMsg",validMsg)
+        setValid("nameIcon",validIcon)
+        document.getElementById("nameIcon").classList.add("validIcon")
+        document.getElementById("nameIcon").classList.remove("invalidIcon")
+        document.getElementById("nameMsg").classList.add("validMsg")
+        document.getElementById("nameMsg").classList.remove("errorMsg")
+    }
+    }
+})
+
+//contact number validation
+const contactNumber = document.forms["myForm"]["requester_phone"];
+contactNumber.addEventListener('input',function (e){
+    console.log(e.target.name)
+    let target = e.target.name;
+    if (target=="req_phone"){
+        var contactNumber = document.forms["myForm"]["requester_phone"].value;
+        if(contactNumber.length!=10){
+            setError("contactNumberMsg",contactNumberErrorMsg)
+            setError("contactIcon",invalidIcon)
+            document.getElementById("contactIcon").classList.add("invalidIcon")
+            document.getElementById("contactIcon").classList.remove("validIcon")
+            document.getElementById("contactNumberMsg").classList.add("errorMsg")
+            document.getElementById("contactNumberMsg").classList.remove("validMsg")
+        }
+        else{
+            setValid("contactNumberMsg",validMsg)
+            setValid("contactIcon",validIcon)
+            document.getElementById("contactIcon").classList.add("validIcon")
+            document.getElementById("contactIcon").classList.remove("invalidIcon")
+            document.getElementById("contactNumberMsg").classList.add("validMsg")
+            document.getElementById("contactNumberMsg").classList.remove("errorMsg")
+        }
+    
+    }
+})
+
+//email address validation
+const email = document.forms["myForm"]["signUpEmail"];
+email.addEventListener('input',function(e){
+    // console.log(e.target.name)
+    let target = e.target.name;
+    if(target=="email"){
+        var email = document.forms["myForm"]["signUpEmail"].value;
+        const emailFormat =/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+        const emailValid = emailFormat.test(email)
+        if(emailValid == false){
+            setError("emailMsg",emailErrorMsg)
+            setError("emailIcon",invalidIcon)
+            document.getElementById("emailIcon").classList.add("invalidIcon")
+            document.getElementById("emailIcon").classList.remove("validIcon")
+            document.getElementById("emailMsg").classList.add("errorMsg")
+            document.getElementById("emailMsg").classList.remove("validMsg")
+        }
+        else{
+            setValid("emailMsg",validMsg)
+            setValid("emailIcon",validIcon)
+            document.getElementById("emailIcon").classList.add("validIcon")
+            document.getElementById("emailIcon").classList.remove("invalidIcon")
+            document.getElementById("emailMsg").classList.add("validMsg")
+            document.getElementById("emailMsg").classList.remove("errorMsg")
+        }
+    }
+})
+
+//password validation 
+const password = document.forms["myForm"]["signUpPassword"]
+password.addEventListener('input', function (e){
+    // console.log(e.target.name)
+    let target = e.target.name;
+    if(target=="password"){
+        var password = document.forms["myForm"]["signUpPassword"].value;
+        const passwordFormat =/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-_]).{8,30}$/;
+        const passwordValid = passwordFormat.test(password)
+        if(passwordValid == false){
+            setError("passwordMsg",passwordErrorMsg)
+            setError("passwordIcon",invalidIcon)
+            document.getElementById("passwordIcon").classList.add("invalidIcon")
+            document.getElementById("passwordIcon").classList.remove("validIcon")
+            document.getElementById("passwordMsg").classList.add("errorMsg")
+            document.getElementById("passwordMsg").classList.remove("validMsg")
+        }
+        else{
+            setValid("passwordMsg",validMsg)
+            setValid("passwordIcon",validIcon)
+            document.getElementById("passwordIcon").classList.add("validIcon")
+            document.getElementById("passwordIcon").classList.remove("invalidIcon")
+            document.getElementById("passwordMsg").classList.add("validMsg")
+            document.getElementById("passwordMsg").classList.remove("errorMsg")
+        }
+    }
+})
+
+
+//upload validation
+const upload = document.forms["myForm"]["uploadtheimage"];
+upload.addEventListener('input',function (e){
+    // console.log(e.target.name)
+    let target = e.target.name;
+    if(target=="uploadtheimage"){
+        var upload = document.forms["myForm"]["uploadtheimage"].value;
+        var uploadFormat =/\.(png)$/;
+        uploadValid = uploadFormat.test(upload);
+        if(uploadValid == false){
+            setError("uploadMsg",uploadErrorMsg)
+            setError("uploadIcon",invalidIcon)
+            document.getElementById("uploadIcon").classList.add("invalidIcon")
+            document.getElementById("uploadIcon").classList.remove("validIcon")
+            document.getElementById("uploadMsg").classList.add("errorMsg")
+            document.getElementById("uploadMsg").classList.remove("validMsg")
+        }
+        else{
+            setValid("uploadMsg",validMsg)
+            setValid("uploadIcon",validIcon)
+            document.getElementById("uploadIcon").classList.add("validIcon")
+            document.getElementById("uploadIcon").classList.remove("invalidIcon")
+            document.getElementById("uploadMsg").classList.add("validMsg")
+            document.getElementById("uploadMsg").classList.remove("errorMsg")
+        }
+    }
+} )
