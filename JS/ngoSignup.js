@@ -158,7 +158,7 @@ password.addEventListener('input', function (e){
     let target = e.target.name;
     if(target=="password"){
         var password = document.forms["myForm"]["signUpPassword"].value;
-        const passwordFormat =/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-_]).{8,30}$/;
+        const passwordFormat =/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,30}$/;
         const passwordValid = passwordFormat.test(password)
         if(passwordValid == false){
             setError("passwordMsg",passwordErrorMsg)
